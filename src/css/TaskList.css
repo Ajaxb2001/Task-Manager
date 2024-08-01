@@ -1,0 +1,70 @@
+.task-list {
+    padding: 20px;
+  }
+  
+  /* Container for individual tasks */
+  .task {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for action buttons within each task */
+  .task-actions {
+    margin-top: 10px;
+  }
+  
+  /* Styling for action buttons */
+  .task-actions button {
+    margin-right: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .task-list {
+      padding: 15px;
+    }
+  
+    .task {
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+  
+    .task-actions {
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 5px;
+    }
+  
+    .task-actions button {
+      width: 100%; /* Make buttons full-width */
+      padding: 10px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .task-list {
+      padding: 10px;
+    }
+  
+    .task {
+      padding: 8px;
+      margin-bottom: 20px;
+    }
+  
+    .task-actions button {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  

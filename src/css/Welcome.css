@@ -1,0 +1,103 @@
+.welcome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    height: 100vh;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+  
+  .welcome-text {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+  }
+  
+  .welcome-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .welcome-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .start-button {
+    padding: 15px 25px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  .welcome-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .welcome-container {
+      padding: 20px;
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+    }
+  
+    .welcome-text {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .welcome-text h1 {
+      font-size: 2.5em;
+    }
+  
+    .welcome-text p {
+      font-size: 1.1em;
+    }
+  
+    .welcome-image {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .welcome-text h1 {
+      font-size: 2em;
+    }
+  
+    .welcome-text p {
+      font-size: 1em;
+    }
+  
+    .start-button {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  
+    .welcome-image img {
+      max-width: 90%;
+    }
+  }
+  
